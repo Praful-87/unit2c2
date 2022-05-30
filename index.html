@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #main {
+            width: 90%;
+            margin: auto;
+
+        }
+
+        .baner {
+            width: 100%;
+            height: 250px;
+            background-color: rgba(0, 0, 128, 0.719);
+            border-radius: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .baner>div:first-child {
+            margin-left: 50px;
+            height: 150px;
+            margin-top: 30px;
+        }
+
+        .baner>img {
+            margin-right: 50px;
+            width: 30%;
+            /* height: 50%; */
+        }
+
+        .baner>div>p {
+            margin-top: 10px;
+            margin-bottom: 7px;
+            font-size: 14px;
+        }
+
+        .baner>div>h2 {
+            margin-bottom: 0px;
+            font-size: 32px;
+        }
+
+        .baner>div>button {
+            border-radius: 7px;
+            border: none;
+            padding: 5px 8px;
+            font-size: 13px;
+        }
+
+        .service {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: auto;
+            gap: 22px;
+        }
+
+        .cards img {
+            width: 80%;
+            margin: auto;
+
+        }
+
+        .cards {
+            background-color: rgb(173, 207, 237);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        #feature {
+            background-color: white;
+            margin: auto;
+        }
+
+        #feature>h3 {
+            margin-bottom: 0%;
+            margin-left: 20px;
+
+
+        }
+
+        #feature>p {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .bot {
+            text-align: center;
+        }
+
+        #add {
+            margin-top: 70px;
+        }
+
+        #sugesstion {
+            font-size: 17px;
+        }
+
+        .work {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 60px 30px;
+        }
+
+        .work img {
+            width: 100%;
+        }
+
+        .work>div>p {
+            margin-bottom: 30px;
+        }
+
+        .work>div {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        /* Medium Screen */
+        @media only screen and (min-width: 500px) and (max-width: 768px) {
+
+            #main {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .baner>div:first-child {
+                margin-left: 20px;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-top: 30px;
+            }
+
+            .baner>img {
+                margin-right: 10px;
+                width: 50%;
+            }
+
+            .baner>div>p {
+                margin-top: 10px;
+                margin-bottom: 7px;
+                font-size: 16px;
+            }
+
+            .baner>div>h2 {
+                margin-bottom: 0px;
+                font-size: 27px;
+            }
+
+            .baner>div>button {
+                border-radius: 7px;
+                border: none;
+                width: 100px;
+                font-size: 13px;
+            }
+
+
+            .service {
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, auto);
+                gap: 22px;
+            }
+
+            .work {
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, auto);
+                gap: 60px 30px;
+            }
+
+            .work>div {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+        }
+
+        /* Small Screen */
+        @media only screen and (min-width: 320px) and (max-width: 499px) {
+            .baner {
+                width: 100%;
+                height: 250px;
+                background-color: rgba(0, 0, 128, 0.719);
+                border-radius: 20px;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .baner>div:first-child {
+                margin-left: 10px;
+                width: 50%;
+                height: 150px;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                margin-top: 30px;
+            }
+
+            .baner>img {
+                margin-right: 10px;
+                width: 50%;
+
+            }
+
+            .baner>div>p {
+                margin-top: 10px;
+                margin-bottom: 7px;
+                font-size: 14px;
+            }
+
+            .baner>div>h2 {
+                margin-bottom: 0px;
+                font-size: 20px;
+            }
+
+            .baner>div>button {
+                border-radius: 7px;
+                border: none;
+                width: 100px;
+                font-size: 13px;
+            }
+
+
+            .service {
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, auto);
+                gap: 22px;
+            }
+
+            .work {
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(8, auto);
+                gap: 40px 40px;
+            }
+
+            .work>div {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+
+            .work img {
+                width: 100%;
+            }
+
+            .work>div>p {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="baner">
+            <div>
+                <h2>You are in safe hands</h2>
+                <p>Choose the experts in end to end surgical care</p>
+                <button>Know More</button>
+            </div>
+            <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="">
+
+        </div>
+        <div class="service">
+            <div class="cards"><img
+                    src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                    alt="">
+                <div id="feature">
+                    <h3>Instant Video Consultation</h3>
+                    <p>Connect Withing 60 secs</p>
+                </div>
+            </div>
+            <div class="cards"><img
+                    src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                    alt="">
+                <div id="feature">
+                    <h3>Instant Video Consultation</h3>
+                    <p>Connect Withing 60 secs</p>
+                </div>
+            </div>
+            <div class="cards"><img
+                    src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                    alt="">
+                <div id="feature">
+                    <h3>Instant Video Consultation</h3>
+                    <p>Connect Withing 60 secs</p>
+                </div>
+            </div>
+            <div class="cards"><img
+                    src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                    alt="">
+                <div id="feature">
+                    <h3>Instant Video Consultation</h3>
+                    <p>Connect Withing 60 secs</p>
+                </div>
+            </div>
+            <div class="cards"><img
+                    src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                    alt="">
+                <div id="feature">
+                    <h3>Instant Video Consultation</h3>
+                    <p>Connect Withing 60 secs</p>
+                </div>
+            </div>
+            <div class="cards"><img
+                    src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+                    alt="">
+                <div id="feature">
+                    <h3>Instant Video Consultation</h3>
+                    <p>Connect Withing 60 secs</p>
+                </div>
+            </div>
+
+        </div>
+        <h1 id="add" class="bot">Book an appointment for an in-click consultation</h1>
+        <p id="sugesstion" class="bot">Find experinced docotors all specialties</p>
+        <div class="work">
+            <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                    alt="">
+                <h2>Dentist</h2>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+            <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                    alt="">
+                <h2>Dentist</h2>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+            <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                    alt="">
+                <h2>Dentist</h2>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+            <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                    alt="">
+                <h2>Dentist</h2>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+            <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                    alt="">
+                <h2>Dentist</h2>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+            <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                    alt="">
+                <h2>Dentist</h2>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+            <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                    alt="">
+                <h2>Dentist</h2>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+            <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                    alt="">
+                <h2>Dentist</h2>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
